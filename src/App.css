@@ -1,0 +1,75 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  
+  overflow-x: hidden;
+  
+}
+
+:root{
+  --primaryColor: #420251;
+  --secondaryColor:#DF7910;
+  --thersCoror:#a561b5;
+  --mainHeading:#1C2E9E;
+  --subHeading:#7E87BF;
+  --stepCart1:#362465;
+  --setpCard2:#561af0;
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Customize the speed by adjusting the animation-duration */
+.animate-custom-spin {
+  position:absolute;
+  z-index: 999;
+  
+  animation: rotate 7s linear infinite; /* Change '4s' to control the speed (e.g., 2s, 6s) */
+}
+.animate-custom-spin, img{
+  width: 20rem;
+  height: auto;
+}
+
+.main-heading{
+  color: var(--mainHeading);
+}
+
+.sub-heading{
+color: var(--subHeading);
+font-size: 1.3rem;
+}
+.is-fixed  {
+  position: fixed;
+  top: 0;
+  left: 0;
+  box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.1);
+  /* background: var(--card-bg); */
+  z-index: 99999;
+  transition: all 0.5s;
+   }
+
+   .btn-start{
+    background: var(--secondaryColor);
+    color: var(--primaryColor);
+   }
+   .btn-start:hover{
+    background: var(--thersCoror);
+   }
+
+   .step-card{
+    background-color: var(--stepCart1) ;
+   }
+   .step-card:hover{
+    background-color: var(--setpCard2);
+   }
